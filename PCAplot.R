@@ -13,7 +13,7 @@ rld <- rlog(dds, blind=FALSE)
 head(assay(rld), 3)
 library(genefilter)
 library("ggplot2")
-#with text
+#with text on the plot showing name of each sample
 #benstyle.PCA = function(object, intgroup="condition", ntop=500, x=1, y=2, returnData=FALSE)
 {
   # calculate the variance for each gene
@@ -57,7 +57,7 @@ library("ggplot2")
     coord_fixed() + geom_text()+theme(panel.background = element_rect(fill = 'white'))
   
 }
-#without text
+#without text on the plot showing the name of each sample
 benstyle.PCA = function(object, intgroup="condition", ntop=500, x=1, y=2, returnData=FALSE)
 {
   # calculate the variance for each gene

@@ -1,4 +1,4 @@
-
+#Creating PCA plots of RNA-sequencing data
 install.packages('Rcpp', dependencies = TRUE)
 library("Rcpp")
 install.packages('colorspace', dependencies = TRUE)
